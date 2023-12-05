@@ -8,3 +8,19 @@ function sikeres(){
     
     console.log(email);
 }
+
+$(document).ready(function () {
+  $("#form2").validate({
+      rules: {
+          emailcim2:{
+            email: true,
+          },
+      },
+      messages: {
+          emailcim2:{
+            email:"Érvénytelen formátum!",
+          }
+      },
+
+  });
+});
