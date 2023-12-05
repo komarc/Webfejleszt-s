@@ -1,6 +1,6 @@
 # Webfejleszt-s
-Oktatási célú beadandó
-Készítő: Kozári Márton
+1.Oktatási célú beadandó
+2.Készítő: Kozári Márton
 
 
 Url:https://komarc.github.io/Webfejleszt-s/
