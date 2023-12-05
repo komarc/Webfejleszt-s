@@ -484,7 +484,11 @@ a.valasz{
 input#email2{
  width:30vh;
 }
+label.error{
+    color:red;
+    display: block;
 
+}
 /*/*//**//*/**//*/**//*/*//*/*//**/
 
 
