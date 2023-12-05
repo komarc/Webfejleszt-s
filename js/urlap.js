@@ -54,16 +54,13 @@ if (kornyezet === "Válassz") {
 }
 
 // Aktivitások
-const strandolas = document.getElementById("strandolas").checked;
-const kemping = document.getElementById("kemping").checked;
-const kerekparozas = document.getElementById("kerekpar").checked;
 let tipus2;
 if (strandolas.checked) {
-    tipus2 = strandolas.value;
+    tipus2 = "strandolas";
 } else if (kemping.checked) {
-    tipus2 = kemping.value;
-} else if(kerekparozas.checked){
-    tipus2=kerekparozas.value;
+    tipus2 = "kemping";
+} else if(kerekpar.checked){
+    tipus2="kerekparozas";
 } else {
     alert("Hiba: Üresen hagyott mező! Válassz aktivitást");
     hiba++;
@@ -94,14 +91,9 @@ if(foDb<1){
   console.log("Nyaralás időpontja:", honap);
   console.log("Nyaralás típusa:", tipus);
   console.log("Környezet:", kornyezet);
-  console.log("Strandolás:", strandolas);
-  console.log("Kempingezés:", kemping);
-  console.log("Kerékpározás:", kerekparozas);
   console.log("aktivitas:", tipus2);
   console.log("Utazási keret:",keret);
   console.log("Hány fő?:", foDb);
-
-
 
 
 
@@ -152,14 +144,14 @@ amalfi=0;
   if (kornyezet=="mindketto"){
     stockholm++;
   }
-  if (strandolas==true){
+  if (strandolas.checked){
     amalfi++;
     santorini++;
   }
-  if (kemping==true){
+  if (kemping.checked){
     bled++;
   }
-  if (kerekparozas==true){
+  if (kerekpar.checked){
     barcelona++;
     provence++;
     amalfi++;
