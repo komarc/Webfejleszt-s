@@ -297,3 +297,19 @@ $(document).ready(function () {
     },
   });
 });
+
+$(document).ready(function () {
+  $("#form2").validate({
+      rules: {
+          emailcim2:{
+            email: true,
+          },
+      },
+      messages: {
+          emailcim2:{
+            email:"Érvénytelen formátum!",
+          }
+      },
+
+  });
+});
