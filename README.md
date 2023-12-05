@@ -9,17 +9,20 @@ Url:https://komarc.github.io/Webfejleszt-s/
 A Weboldalam utazási/nyaralási ajánlásokat ad és ismertetőket az aktuálisan legfelkapottabb helyekről az olyan látogatók számára kik ezekben érdekeltek. A weboldal továbbá biztosít egy kérdőívet olyanok számára kik nem biztosak abban, hogy hova menjenek, így válaszolnak pár kérdésre és elküldést követően kapnak egy ajánlást azonnal.
 
 Javascript kódok:
+
 1.sikeres.js: Minden oldalon megtalálható, a hírlevélre való feliratkozáts követően változik meg az email értéke “Sikeresen feliratkoztál!” értékre.
 2.kalauznyilo.js: Felel a kattintásra lenyíló szöveges dobozért.
 3.urlap.js: Űrlapot validálja és kiértékeli az eredményt mely egy ajánlott ország lesz.
 
 Font típusok:
 Google fontok→
+
     Sofia:https://fonts.googleapis.com/css?family=Sofia, header címbért felel
     Trirong:https://fonts.googleapis.com/css?family=Trirong, szövegekhe zvan használva
     Source Code Pro:https://fonts.googleapis.com/css?family=Source+Code+Pro, űrlapon van használva
 
 Forrasok
+
     logo:https://www.logoai.com/make
     logo forras:https://www.freepik.com/premium-vector/travel-icon-collection-white-background_54962038.htm
     bevezetokep:https://www.cntraveller.com/gallery/places-to-visit-europe
