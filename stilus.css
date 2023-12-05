@@ -1,0 +1,636 @@
+/*ÁLTALÁNOS*/
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Trirong';
+    hyphens: auto;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: rgb(172, 168, 168);
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+p{
+    font-family:"Trirong";
+    font-size:large;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+/*tagek*/
+header h1{
+    
+    font-family:"Sofia"; 
+    text-align:center;
+    padding-top:1vh;
+    letter-spacing: 0.3cap;
+    font-size:1.75em;
+
+}
+header p{
+    text-align:center;
+    font-size:large;
+    padding-bottom:30px;
+    letter-spacing:0.5cap;
+}
+
+footer{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    
+}
+footer table tr td ul li a{
+    text-decoration: none;
+}
+footer table tr td ul{
+    list-style-type:none;
+    padding:0;
+}
+
+
+/*menu*/
+
+nav{
+    flex: 1 1 100%;
+    height:40vh;
+    text-align:center;
+    background-size: cover;
+    background-repeat:repeat-x;
+    height:auto; 
+}
+
+nav ul{
+    display:flex;
+    width:auto;
+    flex-direction: column;
+    justify-content:space-around;
+    list-style-type:none;
+    padding:0;
+}
+nav ul li{
+    padding:2vw;
+}
+nav ul li a{  
+    display:block;
+    color:rgb(172, 168, 168);
+    text-decoration: none;
+    font-size:1.6em;
+    background-color:grey;
+    padding:2.5px;
+    border-radius:10px;
+    color:bisque;
+    transition:all 0.5s;
+    
+    
+}
+nav a:hover ,nav a #current{
+    font-size:2.1em;
+    
+}
+ul.menu{
+    margin:0;
+    padding-top:10px;
+}
+
+        
+.kephatteres {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .kephatter {
+    opacity: 0.3;
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:auto;
+  }
+  
+  .kephatter-szoveg {
+    position: relative;
+  }
+
+#active{
+    width:70vw;
+    color:white;
+}
+#activeli{
+    align-self:center;
+}
+
+
+/*div-id*/
+
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size:2em;
+    letter-spacing:0.5cap;
+  }
+
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid gold;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }
+  .felkapott{
+    font-size:1.1em;
+  }
+
+
+
+/*article*/
+
+hr.elvalaszto{
+    width:5vw;
+    background-color:transparent;}
+
+ article p{
+    font-size:1em;
+    text-align:justify;
+}
+img.bevezetokep{
+    width:100%;
+    height:auto;
+}
+.bevezetoteljes{
+    background-color:black;
+}
+article.bevezeto p::first-line{
+    color:white;
+}
+
+article img{
+    border-radius: 10px;
+    max-width:25vh;
+}
+article img.jobbkep{
+    
+    float:right;
+    margin-left:3vw;
+    
+}
+article img.balkep{
+    
+    float:inline-start;
+    margin-right: 5vw;
+    margin-bottom:0px;
+}
+
+
+article.orszag h2{
+    margin:0;
+    padding-bottom:0;
+    margin-bottom:0;
+    text-align:center;
+
+}
+article.orszag{
+    margin-top:80px;
+    border: 0.5vh solid rgb(169,184,195);
+    border-radius: 15px;
+    background-color:whitesmoke;
+    
+}
+
+.gordulo{
+    background-image:url("kepek/mountains.jpg");
+    height:10vh;
+    background-position: center;
+    background-attachment: fixed;
+    color:white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cim hr{
+    width:5cap;
+}
+article{
+    flex: 1 1 100%;
+}
+
+/*footer*/
+
+.elerhetosegek{
+    width:100%;
+    height:10vh;
+    display:flex;
+    justify-content:center;
+    
+}
+.elerhetosegek a img{
+    transition: all 1s;
+    padding:3vh;
+}
+.elerhetosegek img:hover{
+   padding-top:5vh;
+}
+aside input.gomb{
+    color:black;
+}
+aside input.gomb:hover{
+    color:black;
+}
+aside form .elem{
+    margin-bottom:2vh;
+}
+aside form .urlapelem{
+    margin-bottom:0px;
+}
+
+/*KALAUZ*/
+    /*ATIRNI*/
+button.gomb{
+    margin-top:30px;
+    font-size: 2.5vh;
+    font-weight: bold;
+    padding:0;
+    cursor: pointer;
+    letter-spacing: 0.7vh;
+    background-color: whitesmoke;
+    border-radius: 2vw;
+    border: bisque solid 0.5vw;
+    border-top:0.7vw bisque solid;
+    transition: all 0.4s ease;
+}
+
+.gomb:hover, .szoveg p{
+    color: white;
+    background-color:rgb(215, 182, 117);
+    border:dotted 0.5vw rgb(208, 187, 160);
+}
+
+.szoveg{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    width:70%;
+    padding:0px;
+    margin:0px;
+    border-radius:10px;
+    margin-top:5vw;
+
+    
+}
+
+.szoveg p{
+    margin:0px;
+    background-color:rgb(171, 153, 131);
+    color:white;
+    transition: all 0.5s;
+    text-align:center;
+    padding:1vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.aktiv, button.aktiv{
+    color:black;
+    background-color: rgb(215, 182, 117);
+}
+
+
+/*PEAK SEASON*/
+    /*bevezetes*/
+article.bevezetes{
+    text-align: center;
+}
+.oszlop{
+    display:flex;
+    flex-direction: column;
+    border:10px double rgba(171, 158, 141, 0.1);
+    border-radius: 15px;
+}
+article.bevezetes .gordulo{
+    height:auto;
+}
+article.bevezetes p{
+    padding-bottom: 6vh;
+    font-size:2.4vh;
+    text-align: center;
+}
+
+    /*galeria*/
+#galleria{
+    height: 50vh;
+    width:100vw;
+    margin:auto;
+}
+article.border{
+    width:100%;
+}
+    /*cards*/
+article.card{
+    background-color: black;
+    margin:6vw;
+    border-radius: 10vh;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+iframe{
+    border:0px;
+    display: flex;
+
+}
+article.card{
+    display: flex;
+    flex-direction: column;
+}
+article.card p.utolsop{
+    margin-bottom:0px;
+}
+
+article.card .videoteszt{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 175%;/*16:9*/
+}
+article.card .video {
+    position:absolute;
+    top: 0; /*lenullázza a paddinget*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+article.card{
+    width:auto;
+    height:auto;
+}
+
+article.card .txt{
+    color:rgb(172, 168, 168);
+    text-align: center;
+    text-decoration: none;
+}
+article.card a{
+    letter-spacing: 3vh;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}
+article.card p{
+    padding-left:1vh;
+    font-size:125%;
+}
+article.card p::first-letter{
+    font-size:larger;
+}
+
+
+/*Teszt*/
+.gordulo2{
+    background-image:url("kepek/plane.jpg");
+    height:auto;
+    width:80vw;
+    background-position: center;
+    background-attachment: fixed;
+    color:white;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+input{
+    background-color: transparent;
+    border:1px solid transparent;
+    width:1px;
+    text-align: center;
+    font-family: 'Source Code Pro';
+    font-size: 1.75vh;
+
+}
+input.gomb{
+    width:20vh;
+    color:white;
+}
+
+input.gomb:hover{
+    background-color:transparent;
+    border:solid 2px bisque;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.urlap{
+    text-align: center;
+}
+
+form a, .cim{
+    font-weight: bold;
+    font-size: 2.25vh;
+}
+
+.urlapelem{
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+a.valasz{
+    float:right;
+    font-weight: 100;
+
+}
+.nyartipus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.elem{
+    margin-left:10vw;
+    margin-right:10vw;
+}
+#type1, #type2{
+    width:2vh;
+}
+
+input#email2{
+ width:30vh;
+}
+
+/*/*//**//*/**//*/**//*/*//*/*//**/
+
+
+
+
+@media all and (min-width:600px){
+    /*tablet*/
+    article img{
+        width:25vw;
+     }
+     /*menu*/
+        nav{
+            flex-basis: 100%;
+        }
+        nav ul li{
+            padding:10px;
+            align-self:center;
+            
+        }
+        nav ul li a{  
+            width:50vw;    
+        }
+        article{
+            flex-basis: 100%;
+        }
+
+        /*peakseason.html*/
+
+        .oszlop{
+            display:flex;
+            flex-direction: column;
+            border:10px double rgba(171, 158, 141, 0.1);
+            border-radius: 15px;
+            margin:7vh;
+        }
+        /*cards*/
+        article.card .videoteszt{
+            padding-bottom: 100%;
+        }
+    
+
+    }
+    
+    @media all and (min-width:768px){
+        /*számítógép*/
+        /*menu*/
+        ul.menu{
+            margin:0;
+            padding-top:10px;
+            height:10vh;
+        }
+        nav{
+            flex-basis: 100%;
+            position: sticky;
+            top: 0;
+        }
+        nav ul{
+            flex-direction: row;
+        }
+        nav ul li{
+            width:20%; 
+        }
+        nav ul li a{
+            display:table;  
+            width:100%;
+        }
+      
+        .kephatter {
+            opacity: 0;
+        }
+        #active{
+            width:75%;
+        }
+
+    /*article*/
+    article{
+        flex-basis: 100%;
+    }
+    
+    /*peakseason.html*/
+
+        /*nav*/
+        .nonsticky{
+            position:relative;
+            top:0;
+        }
+        .oszlop{
+            flex-direction: row;
+        }
+        article.bevezetes p{
+            padding-bottom: 0vh;
+            font-size:2.4vh;
+            text-align: center;
+        }
+        .oszlop1, .oszlop2, .oszlop3{
+            margin-left:0px;
+        }
+        .oszlop1{
+            margin-left:8vh;
+            margin-right:8vh;
+        }
+
+        /*cards*/
+
+        article.card .videoteszt{
+            flex-basis: 30%;
+        }
+        article.card .txt{
+            flex-basis: 60%;
+        }
+        article.card a{
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+            article.card .repjegy{
+            display:flex;
+            flex-basis: 10%;
+            justify-content: center;
+            }
+        article.card{
+            display: flex;
+            flex-direction: row;
+        }
+        article.card .videoteszt{
+            padding-bottom:53%;
+        }
+
+        /*teszt*/
+        .urlapelem{
+            flex-direction: row;
+        }
+        
+        /*all*/
+        aside input.elem{
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+    }
+    
+
+
+
+
+
+
+
+

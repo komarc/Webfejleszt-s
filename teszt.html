@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kozári Márton">
+    <meta name="copyright" content="Csak oktatási célokra">
+    <meta name="description" content="Utazas Zrt. weboldala">
+    <title>Hovautazzak</title>
+    <link rel="icon" href="kepek/logo3fokis.png">
+    <link rel="stylesheet" href="stilus.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="kepek/logo3fokis.png" alt="logo"></a>
+        <h1>HOVAUTAZZAK.HU</h1>
+        <p>Európai időutazás: Fedezd fel a legjobb helyeket, a legjobb időpontokban!</p>
+
+    </header>
+    <div class="separator">MENÜ</div>
+
+    <nav>
+        <div class="kephatteres">
+            <img class="kephatter" src="kepek/hatter.avif" alt="hatterkep">
+            <div class="kephatter-szoveg navbar">
+                <ul class="menu">
+                    <li id="activeli"><a  id="active" href="teszt.html">Teszt</a></li>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="kalauz.html">Kalauz</a></li>
+                    <li><a href="peakseason.html">Szezon</a></li>
+                    <li><a href="rolunk.html">Rólunk</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="separator felkapott">Hova menj nyaralni?</div>
+    <div class="container">
+
+    <article class="bevezetes">
+        <p>Ez a teszt lehetővé teszi, hogy a válaszaid és jelöléseid alapján személyre szabottan képet kapj arról hogy hova lenne érdemes nyáron elmenni nyaralni.</p>
+    </article>
+
+
+<div class="gordulo2">
+    <div class="urlap">
+        <form id="nyaralas" method="POST" action="http://szamtud.uni-corvinus.hu/receive.php">
+            <div class="urlapelem">
+                <label for="name" class="cim">Neve</label><br>
+                <input type="text" class="gomb" id="name" name="nev">
+            </div>
+        
+            <div class="urlapelem">
+                <label for="email" class="cim">Email</label><br>
+                <input type="email" class="gomb" id="email" name="emailcim">
+            </div>
+        
+            <div class="urlapelem">
+                <label for="tel" class="cim">Telefonszám</label><br>
+                <input type="tel" class="gomb" id="tel" name="telefonszam">
+            </div>
+        
+            <div class="urlapelem">
+                <label for="month" class="cim">Nyaralás időpontja</label><br>
+                <input type="month" class="gomb" id="month" name="honap">
+            </div>
+        
+            <div class="urlapelem">
+                <div class="nyartipus">
+                    <div class="elem">
+                        <label for="type1" class="valasz">Aktív</label>
+                        <input type="radio" class="gomb" id="type1" name="tipus" value="aktiv">
+                    </div>
+                    <div class="elem">
+                        <a class="kozep">Nyaralás típusa</a>
+                    </div>
+                    <div class="elem">
+                        <label for="type2" class="valasz">Pihenő</label>
+                        <input type="radio" class="gomb" id="type2" name="tipus" value="pihi">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="urlapelem">
+                <label for="kornyezet" class="cim">Környezet</label><br>
+                <select id="kornyezet" name="kornyi">
+                    <option value="">Válassz</option>
+                    <option value="varosi">Városi</option>
+                    <option value="tengeparti">Tengerparti</option>
+                    <option value="mindegy">Bármelyik</option>
+                </select>
+            </div>
+        
+            <div class="urlapelem">
+                <label class="cim">Milyen aktivitásokat tűztél ki?</label><br>
+                <label for="strandolas">
+                    <input type="checkbox" id="strandolas" class="gomb" name="akti">
+                    <span class="valasz">Strandolás</span>
+                </label>
+        
+                <label for="kemping">
+                    <input type="checkbox" id="kemping" class="gomb" name="akti">
+                    <span class="valasz">Kempingezés</span>
+                </label>
+        
+                <label for="kerekpar">
+                    <input type="checkbox" id="kerekpar" class="gomb" name="akti">
+                    <span class="valasz">Kerékpározás</span>
+                </label>
+            </div>
+        
+            <div class="urlapelem">
+                <label for="keret" class="cim">Utazási keret [EUR]</label><br>
+                <input type="range" class="gomb" min="10000" max="150000" step="5000" value="0" oninput="this.form.Rangeszam.value=this.value" id="keret">
+                <input type="number" class="gomb" name="Rangeszam" value="10000">
+            </div>
+        
+            <div class="urlapelem">
+                <label for="fo" class="cim">Hány fő?</label><br>
+                <input type="number" id="fo" name="fok" class="gomb">
+            </div>
+        
+            <div class="urlapelem">
+                <input type="submit" id="mybutton" class="gomb cim" value="Elküldés">
+            </div>
+        
+            <div class="urlapelem">
+                <input type="reset" class="gomb cim" id="torol" name="Törlés">
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+
+
+
+
+
+    </div>
+    <footer>
+        <aside class="ikon">
+            <a href="index.html">
+            <img src="kepek/logo3fokis.png" alt="logo"></a>
+        </aside>
+        <aside>
+            <div class="elerhetosegek">     
+            <a target="_blank" href="https://facebook.com"><img src="kepek/ikonok/fb.png"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="kepek/ikonok/makefg.png"
+                        alt="instagram"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img
+                        src="kepek/ikonok/pinterest.png" alt="pinterest"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="kepek/ikonok/twitter.png"
+                        alt="twitter"></a></div>
+        </aside>
+            
+        <aside>  
+            <p>Iratkozz fel hírlevelünkre, hogy értesülj a legújabb és legtrendibb utazási helyekről!</p>
+            <div class="email">
+                <form method="post" action="#">
+                    <div class="urlapelem">
+                        <div class="elem">
+                        <input type="email" name="emailcim" id="email2" placeholder="Email cím" class="gomb"></div>
+                        <div class="elem utolso">
+                        <input type="button" value="Elküldés" id="sikeres" name="kuld" class="gomb" ></div>
+                    </div>
+                </form>
+            </div>
+        </aside>       
+        
+    </footer>
+    <script src="js/sikeres.js"></script>
+<script src="js/urlap.js"></script>
+<script src="js/sikeres.js"></script>
+</body>
+</html>
