@@ -12,6 +12,7 @@ Javascript kódok:
 
 1.sikeres.js: Minden oldalon megtalálható, a hírlevélre való feliratkozáts követően változik meg az email értéke “Sikeresen feliratkoztál!” értékre.
 2.kalauznyilo.js: Felel a kattintásra lenyíló szöveges dobozért.
+
 3.urlap.js: Űrlapot validálja és kiértékeli az eredményt mely egy ajánlott ország lesz.
 
 Font típusok:
